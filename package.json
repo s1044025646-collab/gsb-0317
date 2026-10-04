@@ -1,0 +1,24 @@
+{
+  "name": "a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --disable-warning=ExperimentalWarning --test dist/tests/pal.test.js",
+    "start": "node --disable-warning=ExperimentalWarning dist/src/main.js serve",
+    "demo": "node scripts/demo.mjs",
+    "cli": "node --disable-warning=ExperimentalWarning dist/src/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  },
+  "bin": {
+    "pal": "dist/src/main.js"
+  }
+}
