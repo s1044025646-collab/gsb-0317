@@ -1,0 +1,19 @@
+{
+  "name": "palindrome-manacher-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Manacher 回文区间与镜像半径解释后端（API + CLI）",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/manacher.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
